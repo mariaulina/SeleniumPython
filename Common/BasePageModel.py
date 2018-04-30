@@ -11,3 +11,7 @@ class BasePageModel:
     def findClickableElementByXpath(self, xpath):
         wait = WebDriverWait(self.driver, 10)
         return wait.until(EC.element_to_be_clickable((By.XPATH, xpath)))
+
+    def findClickableElementByID(self, id):
+        wait = WebDriverWait(self.driver, 10)
+        return wait.until(EC.element_to_be_clickable((By.ID, id)))
