@@ -2,6 +2,7 @@ from selenium import webdriver
 
 import BasePageModel
 
+# Gmail login page model
 class LoginPageModel(BasePageModel.BasePageModel):
 
     def Open(self):
